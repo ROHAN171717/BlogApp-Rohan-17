@@ -38,10 +38,10 @@ app.post("/api/upload",upload.single("file"),(req,res)=>{
 
 
 
-// app.get('/',(req,res)=>{
-//     console.log('hello');
-//     res.status(200).send('<h1>hello</h1>')
-// })
+app.get('/',(req,res)=>{
+    console.log('hello');
+    res.status(200).send('<h1>hello</h1>')
+})
 
 app.use('/api/auth',authRoute)
 app.use('/api/user',userRoute)
