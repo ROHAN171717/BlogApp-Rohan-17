@@ -49,7 +49,10 @@ app.use('/api/post',postRoute)
 app.use('/api/cat',catRoute)
 
 
-app.listen(4000,()=>{
+const PORT= process.env.PORT || 3000;
+
+
+app.listen(PORT,()=>{
     console.log('App is running...');
     
 })
